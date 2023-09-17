@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
-function Summaries({ courseList }) {
-  console.log(courseList);
+function Summaries({ courseList, creditHour, price }) {
   return (
     <div className="bg-white rounded-lg p-5 flex flex-col gap-4">
       <p className="text-[#2F80ED] font-Bold text-lg">
-        Credit Hour Remaining: 7hr
+        Credit Hour Remaining: {20 - creditHour}hr
       </p>
       <hr />
 
@@ -18,15 +18,19 @@ function Summaries({ courseList }) {
         ))}
       </ol>
       <hr />
-      <p className="text-[#444444] font-medium">Total Credit Hour: 13</p>
+      <p className="text-[#444444] font-medium">
+        Total Credit Hour: {creditHour}
+      </p>
       <hr />
-      <p className="text-[#444444] font-semiBold">Total Price: 48000USD</p>
+      <p className="text-[#444444] font-semiBold">Total Price: {price}USD</p>
     </div>
   );
 }
 
 Summaries.propTypes = {
   courseList: PropTypes.array,
+  creditHour: PropTypes.number,
+  price: PropTypes.number,
 };
 
 export default Summaries;
