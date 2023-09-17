@@ -45,7 +45,7 @@ function App() {
           ></Summaries>
           <ToastContainer
             position="bottom-center"
-            autoClose={3000}
+            autoClose={30000}
             hideProgressBar
             newestOnTop
             closeOnClick
@@ -54,6 +54,7 @@ function App() {
             draggable={false}
             pauseOnHover
             theme="dark"
+            toastStyle={{ backgroundColor: "#304c71", textAlign: "center" }}
           />
         </div>
       </div>
