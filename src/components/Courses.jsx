@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import Course from "./Course";
 
-function Courses() {
+function Courses({ handleAddCourse }) {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -11,12 +12,20 @@ function Courses() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
       {courses.map((course) => (
-        <Course key={course.id} course={course}></Course>
+        <Course
+          key={course.id}
+          course={course}
+          handleAddCourse={handleAddCourse}
+        ></Course>
       ))}
     </div>
   );
 }
+
+Courses.propTypes = {
+  handleAddCourse: PropTypes.func,
+};
 
 export default Courses;
