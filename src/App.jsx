@@ -23,7 +23,7 @@ function App() {
         setCreditHour(newTotalCreditHour);
         setPrice(price + course.price);
       } else {
-        toast("Adding this course would exceed 20 credit hours.");
+        toast("Sorry, you can take maximum 20 credit hours.");
       }
     } else {
       toast("This course is already in your list.");
