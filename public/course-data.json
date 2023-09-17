@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "course_title": "Introduction to C Programming",
     "course_image": "https://i.ibb.co/Ttfw1bH/Introduction-to-C-Programming.png",
     "description": "A comprehensive introduction to the C programming language.",
@@ -7,6 +8,7 @@
     "credit_hour": 1
   },
   {
+    "id": 2,
     "course_title": "Introduction to Algorithms",
     "course_image": "https://i.ibb.co/QPkKmrb/Introduction-to-Algorithms.png",
     "description": "Explore the fundamental concepts of algorithms and problem-solving.",
@@ -14,6 +16,7 @@
     "credit_hour": 2
   },
   {
+    "id": 3,
     "course_title": "Introduction to C++ for DSA",
     "course_image": "https://i.ibb.co/mhM0sZd/Introduction-to-C-for-DSA.png",
     "description": "Learn C++ with a focus on data structures and algorithms.",
@@ -21,6 +24,7 @@
     "credit_hour": 5
   },
   {
+    "id": 4,
     "course_title": "Basic Data Structures",
     "course_image": "https://i.ibb.co/X4B2N5x/Basic-Data-Structures.png",
     "description": "Get a strong foundation in essential data structures.",
@@ -28,13 +32,15 @@
     "credit_hour": 3
   },
   {
+    "id": 5,
     "course_title": "Introduction to OOP Python",
     "course_image": "https://i.ibb.co/7WnJwFy/Introduction-to-OOP-Python.png",
     "description": "Master object-oriented programming concepts with Python.",
-    "price": 69.99,
+    "price": 18000,
     "credit_hour": 4
   },
   {
+    "id": 6,
     "course_title": "Software Engineering",
     "course_image": "https://i.ibb.co/47PSVtG/Software-Engineering.png",
     "description": "Learn software engineering methodologies and best practices.",
@@ -42,6 +48,7 @@
     "credit_hour": 2
   },
   {
+    "id": 7,
     "course_title": "AWS, Cloud Computing",
     "course_image": "https://i.ibb.co/FwT5gth/AWS-Cloud-Computing.png",
     "description": "Discover Amazon Web Services (AWS) cloud computing services.",
@@ -49,6 +56,7 @@
     "credit_hour": 5
   },
   {
+    "id": 8,
     "course_title": "Database (MySQL)",
     "course_image": "https://i.ibb.co/sV2G1qV/Database-My-SQL.png",
     "description": "Learn about database management using MySQL.",
@@ -57,6 +65,7 @@
   },
 
   {
+    "id": 9,
     "course_title": "Problem Solving",
     "course_image": "https://i.ibb.co/Xxpg3yv/Problem-Solving.png",
     "description": "Improve your problem-solving skills and strategies.",
