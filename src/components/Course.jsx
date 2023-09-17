@@ -13,10 +13,12 @@ function Course({ course, handleAddCourse }) {
         <div className="flex justify-between">
           <h1 className="text-[#444] font-medium flex items-center gap-2">
             <BsCurrencyDollar />
+            Price: &nbsp;
             {price}
           </h1>
           <h1 className="text-[#444] font-medium flex items-center gap-2">
             <BsBook />
+            Credit: &nbsp;
             {credit_hour}hr
           </h1>
         </div>
