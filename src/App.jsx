@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Courses from "./components/Courses";
 import Summaries from "./components/Summaries";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [courseList, setCourseList] = useState([]);
@@ -21,10 +23,10 @@ function App() {
         setCreditHour(newTotalCreditHour);
         setPrice(price + course.price);
       } else {
-        alert("Adding this course would exceed 20 credit hours.");
+        toast("Adding this course would exceed 20 credit hours.");
       }
     } else {
-      alert("This course is already in your list.");
+      toast("This course is already in your list.");
     }
   }
 
@@ -41,6 +43,18 @@ function App() {
             creditHour={creditHour}
             price={price}
           ></Summaries>
+          <ToastContainer
+            position="bottom-center"
+            autoClose={3000}
+            hideProgressBar
+            newestOnTop
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable={false}
+            pauseOnHover
+            theme="dark"
+          />
         </div>
       </div>
     </div>
